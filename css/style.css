@@ -1,0 +1,337 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@200;300;400;500;600;700;800;900&display=swap');
+body {
+	font-family:  exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+	background: linear-gradient(90deg, rgba(252, 23, 255, 1) 0%, rgba(94, 180, 255, 1) 100%);
+}
+
+.header-bg {
+	background: url(https://annedece.sirv.com/Images/Wave-10s-1920px.png) no-repeat center top;
+}
+
+a {
+	color: #222;
+	transition: all 0.3s ease;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.active2 {
+	color: #06C;
+}
+
+.btn {
+	padding: 8px 20px !important;
+}
+
+.border-radius-new {
+	border-radius: 20px;
+}
+
+.nav-link .nav-linka {
+
+	font-weight: bold;
+	margin: 0 10px;
+}
+
+.tt {
+	top: -30px;
+	left: -10px;
+	position: absolute;
+	background-color: #FFF;
+	border-radius: 100%;
+	width: 70px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tt i {
+	font-size: 26px;
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.ll i {
+	font-size: 26px;
+}
+
+.kk {
+	background-color: #FFF;
+	border-radius: 100%;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+.kk i {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+}
+
+.hh {
+	font-size: 54px;
+}
+
+.vv {
+	transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 992px) {
+	.mobile-bg {
+		background-color: #74a3fa;
+	}
+}
+
+ .dropdown.nav-linka{
+	color: #222;
+	margin: 0 5px 0 10px;
+	text-decoration: none;
+	z-index: 9999;
+	
+} 
+
+ul.submenu {
+	position: relative;
+	display: none;
+	left: 0;
+	top: 150%;
+	width: 300px;
+	text-align: left;
+	background-color: #222222;
+	z-index: 9999;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+ul.submenu li:first-child {
+	border-top: none;
+}
+
+ul.submenu>li {
+	border-top: 1px solid #333333;
+}
+
+ul li ul li {
+	margin-left: 0;
+}
+
+ul.submenu>li>a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 0 0 0 20px;
+	line-height: 45px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+ul li:hover>ul.submenu {
+	top: 100%;
+	display: block;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+	visibility: visible;
+}
+
+.dropdown-menu {
+	background-color: white;
+	border: transparent;
+	text-align: center;
+	padding: 0 5px 0 5px;
+}
+
+.rect {
+	display: inline-block;
+	padding: 0.5rem;
+	background-color: #222;
+}
+
+.about-desc {
+	font: 2rem/1.47059em "Roboto Light", "Arial", sans-serif;
+	letter-spacing: -0.01em;
+	color: #2a364d;
+}
+
+.dropdown {
+	background-color: white;
+	position: absolute;
+	display: none;
+	text-align: center;
+	text-decoration: none;
+	list-style-type: none;
+	border-radius: 3px;
+}
+.dropdown-side {
+	border-radius: 5px;
+	background-color: white;
+	position:absolute;
+	width: 100%;
+	left: 90%;
+	padding-left: 15%!important;
+	top: 0%;
+ 	display: none;
+	text-align: center;
+	text-decoration: none;
+	text-align: left;
+	list-style-type: none;
+	z-index: -1;
+}
+.dropdown-side li{
+	list-style-type: disc;
+
+}
+.dropdown-side li::marker{
+	color: #06C;
+}
+.arrow-down::after {
+	display: inline-block;
+	margin-left: .255em;
+	vertical-align: .255em;
+	content: "";
+	border-top: .3em solid;
+	border-right: .3em solid transparent;
+	border-bottom: 0;
+	border-left: .3em solid transparent;
+}
+.arrow-right::after {
+	display: inline-block;
+	margin-left: .255em;
+	vertical-align: .255em;
+	content: "";
+	border-top: .3em solid;
+	border-right: .3em solid transparent;
+	border-bottom: 0;
+	border-left: .3em solid transparent;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+
+}
+.pattern {
+	
+	margin-top: 2rem;
+	position: relative;
+	height: 1vh;
+	width: 80%;
+	background: #fff;
+	filter: contrast(7);
+	
+  }
+  .pat{
+	height: 10vh;
+	width: 80%;
+
+	background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+  }
+
+
+  /* 
+  */
+  /* 
+  <div class="_24mhvLOsy5Vyw8O5vuhlhI"> */
+   .lawla {
+    width: 300px;
+    position: absolute;
+    left: -106px;
+    top: 20px;
+    z-index: 9010;
+    margin: 0 auto;
+    transform-origin: 150px 15px;
+    padding: 20px 0 0 0;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+._3BmO7PHdIT_t_WUQWii0rg {
+    color: #02203c;
+}
+/* <div class="_2MBnV3xnEEG-9WUgJnBgZj _1MqiARqRo03usWcwZ5sIrM">*/
+.thenye {
+    box-shadow: 0 0 40px 5px rgba(0,0,0,.5);
+    position:absolute;
+	color: #02203c;
+	background-color: white;
+
+    height: 100%;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+/* 
+<a class="_27iwxL_VaWdT7SQ3MjipBi _3sU_nVZ-VZbEwE2ehhUK28" href="/product"> */
+._3sU_nVZ-VZbEwE2ehhUK28:hover {
+    color: #fff;
+    background-color: #626ee3;
+}
+._27iwxL_VaWdT7SQ3MjipBi:first-child {
+    border-radius: 4px 4px 0 0;
+}
+._27iwxL_VaWdT7SQ3MjipBi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #02203c;
+    background-color: #fff;
+    padding: 20px;
+    transition: background-color .2s,color .2s;
+}
+a {
+    text-decoration: none;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+._3BmO7PHdIT_t_WUQWii0rg {
+    color: #02203c;
+}
+/*  */
+#menu {
+	position: fixed;
+	display: none;
+	left: 0;
+	top: 50%;
+	width: 7em;
+	margin-top: -2.5em;
+	padding-left: 19px!important;
+  }
+  #menu li{
+	  list-style: none;
+		width: 100%;
+		height: 12px;
+	}
+  .notinview{
+	  font-size: 7px;
+	  opacity: 0.3;
+  }
+  .inview{
+	  font-size: 16px!important;
+		font-weight: bold;
+		margin-bottom: 38px;
+	}
+	.inview a{
+		color: #990909;
+
+	}
